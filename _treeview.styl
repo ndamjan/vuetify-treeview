@@ -27,7 +27,7 @@ treeview($material)
         overflow hidden
         white-space nowrap
 
-  button i.icon.expanded
+  button i.v-icon.material-icons.expanded
     transform: rotate(90deg)
 
   .root
@@ -45,6 +45,8 @@ treeview($material)
 
     &:hover,&.selected
       background: $material.table.hover
+      label
+        color: invert($material.table.hover)
 
       .treeview-toolbar
         visibility: visible
